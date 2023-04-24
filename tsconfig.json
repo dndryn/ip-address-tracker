@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        /* Language and Environment -*/
+        "target": "ES5",
+        "jsx": "react",
+
+        /* Modules */
+        "module": "ES6",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        "paths": {
+            "@root": [ "./src/app/App.ts" ],
+            "@data/*": [ "./src/app/data/*.json" ],
+            "@asset/*": [ "./src/assets/images/*" ],
+        },
+
+        /* JavaScript Support */
+        "allowJs": true,
+
+        /* Emit */
+        "sourceMap": true,
+        "outDir": "./dist/",
+
+        /* Interop Constraints */
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+
+        /* Type Checking */
+        "strict": true,
+        "noImplicitAny": false,
+
+        /* Completeness */
+        "skipLibCheck": true
+    },
+    "ts-node": {
+        "compilerOptions": { "module": "CommonJS" }
+    },
+    "exclude": [
+        "docs"
+    ]
+}
+
+
