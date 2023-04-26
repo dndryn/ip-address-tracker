@@ -10,9 +10,16 @@
         "resolveJsonModule": true,
         "baseUrl": ".",
         "paths": {
-            "@root": [ "./src/app/App.ts" ],
+            "@app": [ "./src/app/_index.tsx" ],
             "@data/*": [ "./src/app/data/*.json" ],
             "@asset/*": [ "./src/assets/images/*" ],
+            "@page/*": [ "./src/app/pages/*/_index.tsx" ],
+            "@component/*": 
+            [ 
+                "./src/app/components/ui/*/_index.tsx", 
+                "./src/app/components/form/*/_index.tsx" 
+            ],
+            "@style/*": [ "./src/app/assets/scss/*.scss" ],
         },
 
         /* JavaScript Support */

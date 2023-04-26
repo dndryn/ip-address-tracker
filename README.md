@@ -4,9 +4,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ## Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- HTML5
 - Sass
-- Typescript
+- Typescript / TSX
 - [React](https://reactjs.org/) - JS library
