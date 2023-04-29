@@ -1,0 +1,26 @@
+/* ------------------------------------
+fontface: Rubik
+weights: 400, 500, 700
+license: Open Font License
+font source and license path: ./src/app/assets/fonts/rubik 
+*/
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/rubik/Rubik-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+/* Medium: 500 */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/rubik/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+/* Bold: 700 */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/rubik/Rubik-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+/* ------------------------------------ */

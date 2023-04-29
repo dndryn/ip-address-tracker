@@ -11,6 +11,8 @@
         "baseUrl": ".",
         "paths": {
             "@app": [ "./src/app/_index.tsx" ],
+            "@css-reset": [ "./src/app/assets/css/reset.css" ],
+            "@font/Rubik": [ "./src/app/assets/css/fonts.css"],
             "@data/*": [ "./src/app/data/*.json" ],
             "@asset/*": [ "./src/assets/images/*" ],
             "@page/*": [ "./src/app/pages/*/_index.tsx" ],
