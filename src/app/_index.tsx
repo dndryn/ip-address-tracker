@@ -6,7 +6,11 @@ import '@style/App'; // path: src\app\assets\css\App.scss
 import '@style/index'; // path: src\app\assets\scss\index.scss
  
 function App(): JSX.Element {
-    return <Home />;
+    return (
+        <div id="app">
+            <Home />
+        </div>
+    );
 }
 
 export default App;

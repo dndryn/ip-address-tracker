@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack-dev-server --config webpack.dev.ts --open",
+    "server": "webpack-dev-server --config webpack.dev.ts ",
     "build": "webpack --config webpack.prod.ts"
   },
   "author": "dndryn",

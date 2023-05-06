@@ -1,0 +1,21 @@
+{
+    "site": [
+        {
+            "heading": "IP address",
+            "content": "192.212.174.101"
+        },
+        {
+            "heading": "Location",
+            "content": "Brooklyn, NY 10001"
+        },
+        {
+            "heading": "Timezone",
+            "content": "UTC -05:00"
+        },
+        {
+            "heading": "Isp",
+            "content": "SpaceX Starlink"
+        }
+    ]
+    
+}

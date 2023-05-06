@@ -1,0 +1,11 @@
+// This file manages settings of the main window and the CSS constants used by the app.
+// Wndow dimensions are currently dependent on those of the inner page.
+// TODO[?]: make window dimensions independent of inner page dimensions.
+@import 'shared/globals.scss';
+@import 'shared/flex.scss';
+
+#app {
+    width: auto;
+    height: auto;
+    background-color: black;
+}

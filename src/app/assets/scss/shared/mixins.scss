@@ -1,0 +1,29 @@
+@import './globals.scss';
+
+@mixin no-pads {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+@mixin transition {
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin border-left {
+    border-radius: 14px 0 0 14px;
+}
+
+@mixin border-right {
+    border-radius: 0 14px 14px 0;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin font($size, $weight) {
+  font-size: map-get($font-sizes, $size);
+  font-weight: map-get($font-weights, $weight);
+  font-family: $g-font-family;
+}
