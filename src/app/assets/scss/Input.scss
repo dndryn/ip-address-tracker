@@ -1,0 +1,40 @@
+@import './shared/globals.scss';
+@import './shared/mixins.scss';
+
+#main-form {
+    width: 500px;
+    :first-child { display: none; }
+    :focus-visible {
+        @include transition;
+        @include no-pads;
+        outline: none;
+    }
+
+&_input {
+    //TODO: put nice outline effect instead of letter spacing on focus and hover.
+    @include no-pads;
+    @include border-left;
+    @include font(3, 3);
+    @include size(497px, 59px);
+    @include transition;
+    background-color: $color-white;
+    color: $color-dark-gray;
+    text-indent: 25px;
+    &:focus-visible, &:hover { letter-spacing: 1px; }
+    &::placeholder {
+        color: $dark-gray;
+    }
+}
+&_button {
+    @include border-right;
+    @include size(58px, 59px);
+    @include no-pads;
+    @include transition;
+    cursor: pointer;
+    background: $color-black no-repeat center;
+    &:hover, &:active, &:focus, &:focus-visible, &:target {
+        @include transition;
+        background-color: $color-dark-gray;
+    }
+}
+}
