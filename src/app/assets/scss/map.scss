@@ -3,11 +3,17 @@
 
 #map {
     @include size(1440px, 520px);
-    // display: hidden;
-    // margin-top: 188px;
-    // z-index: 999;
-    // position: fixed;
     margin-top: -81px;
-    background-color: $color-dark-gray;
     z-index: 0;
+    &_tile {
+        @include size(100%, 20px);
+        background-color: $color-white;
+        font-family: 'Rubik', sans-serif;
+        @include font(4, 3);
+        color: $color-dark-gray
+    }
+    &_tile, a {
+        @include font(4, 1);
+        color: violet;
+    }
 }
