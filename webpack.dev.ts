@@ -2,8 +2,9 @@ import * as path from 'path';
 import * as webpack from 'webpack';
 import { merge } from "webpack-merge";
 import common from './webpack.common';
-import 'webpack-dev-server';
 import HtmlWebPackPlugin from 'html-webpack-plugin';
+import DotenvWebpackPlugin from "dotenv-webpack";
+import 'webpack-dev-server';
 
 const config = merge < webpack.Configuration > (common, {
     mode: 'development',
@@ -36,7 +37,8 @@ const config = merge < webpack.Configuration > (common, {
                 template: path.resolve(__dirname, 'src', 'template.html'),
                 title: 'Development',
             }
-        )
+        ),
+        new DotenvWebpackPlugin()
     ],
     devServer: { static: path.resolve(__dirname, 'dist') }
 });

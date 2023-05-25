@@ -39,7 +39,18 @@ const config: webpack.Configuration = {
       ".cjs": [".cjs", ".cts"],
       ".mjs": [".mjs", ".mts"],
     },
-    plugins: [new TsconfigPathsPlugin({ configFile: "./tsconfig.json" })],
+    fallback: {
+      //------------>
+      //TODO: the following is work around for dotenv/webpack issue
+      // remove this when issue is resolved
+      "path": require.resolve('path-browserify'),
+      "os": require.resolve("os-browserify/browser"),
+      "fs": false,
+      //<------------
+    },
+    plugins: [
+      new TsconfigPathsPlugin({ configFile: "./tsconfig.json" }),
+    ],
   },
 };
 
