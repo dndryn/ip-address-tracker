@@ -10,9 +10,21 @@
         "resolveJsonModule": true,
         "baseUrl": ".",
         "paths": {
-            "@root": [ "./src/app/App.ts" ],
+            "@app": [ "./src/app/_index.tsx" ],
+            "@css-reset": [ "./src/app/assets/css/reset.css" ],
+            "@font/Rubik": [ "./src/app/assets/css/fonts.css"],
+            "@api/*": [ "./src//api/*.ts" ],
+            "@type/*": [ "./src/app/types/*.d.ts" ],
+            "@interface/*": [ "./src/interfaces/*.d.ts" ],
             "@data/*": [ "./src/app/data/*.json" ],
-            "@asset/*": [ "./src/assets/images/*" ],
+            "@asset/*": [ "./src/app/assets/images/*" ],
+            "@page/*": [ "./src/app/pages/*/_index.tsx" ],
+            "@component/*": 
+            [ 
+                "./src/app/components/ui/*/_index.tsx", 
+                "./src/app/components/form/*/_index.tsx" 
+            ],
+            "@style/*": [ "./src/app/assets/scss/*.scss" ],
         },
 
         /* JavaScript Support */
@@ -30,6 +42,10 @@
         /* Type Checking */
         "strict": true,
         "noImplicitAny": false,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./types"
+        ],
 
         /* Completeness */
         "skipLibCheck": true
