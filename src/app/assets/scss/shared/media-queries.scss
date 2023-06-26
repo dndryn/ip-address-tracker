@@ -1,0 +1,41 @@
+@import './variables';
+
+@mixin on-mobile(
+    $min: map-get($width-mobile, min), 
+    $max: map-get($width-mobile, max)
+    ) {
+    @media screen and 
+    (orientation: portrait) and 
+    (min-width: $min) and 
+    (max-width: $max)  {
+      @content
+    } 
+};
+
+@mixin on-tablet(
+  $min: map-get($width-tablet, min), 
+  $max: map-get($width-tablet, max)
+) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    transition: all 0.6s ease-in-out; 
+    @content
+  }
+};
+
+@mixin on-desktop(
+  $min: map-get($width-desktop, min), 
+  $max: map-get($width-desktop, max)
+) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    transition: all 0.6s ease-in-out; 
+    @content
+  };
+};
+
+@mixin on-ultrawide(
+  $min: map-get($width-ultrawide, min)
+) {
+  @media screen and (min-width: $min) {
+    @content
+  };
+};

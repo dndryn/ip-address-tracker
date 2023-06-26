@@ -1,0 +1,52 @@
+@import './shared/globals.scss';
+@import './shared/mixins.scss';
+@import './shared/media-queries.scss';
+
+#main-form {
+    width: 500px;
+    :first-child { display: none; }
+    :focus-visible {
+        @include transition;
+        @include no-pads;
+        outline: none;
+    }
+    @include on-mobile {
+        @include size(87.2%, 58px);
+    }
+&_input {
+    //TODO: put nice outline effect instead of letter spacing on focus and hover.
+    @include no-pads;
+    @include border-left;
+    @include font(3, 3);
+    @include size(497px, 59px);
+    @include transition;
+    background-color: $color-white;
+    color: $color-dark-gray;
+    text-indent: 25px;
+    &:focus-visible, &:hover { letter-spacing: 1px; }
+    &::placeholder {
+        color: $dark-gray;
+        @include on-mobile {
+            font-size: 10.75px;
+        }
+    }
+    @include on-mobile {
+        width: 82.1%;
+    }
+}
+&_button {
+    @include border-right;
+    @include size(58px, 58px);
+    @include no-pads;
+    @include transition;
+    @include on-mobile {
+        display: block;
+    }
+    cursor: pointer;
+    background: $color-black no-repeat center;
+    &:hover, &:active, &:focus, &:focus-visible, &:target {
+        @include transition;
+        background-color: $color-dark-gray;
+    }
+}
+}
