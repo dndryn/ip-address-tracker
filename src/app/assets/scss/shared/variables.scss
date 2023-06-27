@@ -1,32 +1,3 @@
-// Color variables:
-$primary_dark-blue: hsl(233, 26%, 24%);
-$primary_lime-green: hsl(136, 65%, 51%);
-$primary_bright-cyan: hsl(192, 70%, 51%);
-
-$neutral_grayish-blue: hsl(233, 8%, 62%);
-$neutral_light-grayish-blue: hsl(220, 16%, 96%);
-$neutral_very-light-gray: hsl(0, 0%, 98%);
-$neutral_white: hsl(0, 0%, 100%);
-
-//Font's weight:
-$font-weight_thin: 300;
-$font-weight_mid: 400;
-$font-weight_bold: 700;
-
-// Font's size:
-$font-size_1: 3em;    // 54px    --  54px
-$font-size_2: 2em;    // 36px    --  38px
-$font-size_3: 1.2em;  // 21.6px  --  22px
-$font-size_4: 1em;    // 18px
-$font-size_5: 0.8em;  // 14px
-$font-size_6: 0.7em;  // 12px
-$font-size_7: 0.6em;  // 10px
-
-$font-family_main: 'Public Sans', sans-serif;
-
-$page-elements-width: 1110px;
-$page-padding-sides: 0 119.5px; // -> 8.86%
-
 // Media screens
 $width-mobile: ( min: 320px, max: 480px );
 $width-tablet: ( min: 768px, max: 1023px );
