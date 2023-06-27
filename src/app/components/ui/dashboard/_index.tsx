@@ -1,6 +1,6 @@
 import React from 'react';
 import Block from './Block';
-import '@style/results'; // path: src\app\assets\scss\results.scss
+import '@style/dashboard'; // path: src\app\assets\scss\results.scss
 
 //TODO: rename into dashboard and make it a custom element
 

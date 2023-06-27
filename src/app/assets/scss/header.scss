@@ -1,4 +1,6 @@
 @import './shared/globals.scss';
+@import './shared/media-queries.scss';
+@import './shared/mixins.scss';
 
 header {
     width: 100%;
@@ -8,8 +10,13 @@ header {
 #main-heading {
     height: auto;
     color: $color-white;
-    font-size: $font-size-1;
     font-family: $g-font-family;
     font-weight: $font-weight-1;
     letter-spacing: 3px;
+    @include font(1, 2);
+    @include on-mobile {
+        font-size: 27px;
+        letter-spacing: -2.8%;
+        @include font(2, 1);
+    }
 }
