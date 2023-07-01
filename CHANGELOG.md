@@ -2,6 +2,13 @@
 
 This project follows semantic versioning.
 
+## [0.3.0-alpha] - 2023-07-01
+
+Added
+
+- Responsive design with mobile optimization.
+- .github/workflows file for GitHub Actions.
+
 ## [0.2.0-alpha] - 2023-05-25
 
 Added

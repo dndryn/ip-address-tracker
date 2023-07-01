@@ -1,7 +1,13 @@
+@import './shared/media-queries.scss';
 #page-home {
     // display: flex;
     // flex-direction: column;
     height: auto; //TODO: change to 'auto' when content is added
     background-repeat: no-repeat;
     text-align: center;
+    background-image: url('../images/pattern-bg-desktop.png');
+    @include on-mobile {
+        background-image: url('../images/pattern-bg-mobile.png');
+        background-size: 100% 46.2vh;
+    }
 }
