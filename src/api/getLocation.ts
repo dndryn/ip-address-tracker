@@ -6,7 +6,6 @@ import ipifyResponse from "@interface/ipifyResponse";
 const getLocation = async (ipAddress: string): Promise<Data> => {
   try {
     console.log(`trying to get location for: ${ipAddress}`);
-    console.log(process.env.API_KEY);
     !key && console.log(`using key: ${key}`);
     const response: AxiosResponse<ipifyResponse> = await axios.get(
       "https://geo.ipify.org/api/v2/country,city?",
